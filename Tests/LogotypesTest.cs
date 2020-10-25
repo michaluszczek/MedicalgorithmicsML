@@ -17,7 +17,6 @@ namespace Medicalgorithmics_tests
         public void VerifyFontColor(BrowserType browserType)
         {
             var driver = WebDrivers.CreateBrowser(browserType);
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
             driver.Manage().Window.Maximize();
             driver.Navigate().GoToUrl(Test_url);
             MainPage mainPage = new MainPage(driver);
